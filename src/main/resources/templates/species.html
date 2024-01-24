@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <th:block th:include="fragments/head.html"></th:block>
+    <title>Species</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    
+    <h1>Fish Species Management</h1>
+
+    <div>
+        <h2>Neue Fischart hinzufügen</h2>
+        <label for="fishType">Fish Type:</label>
+        <select id="fishType">
+            <option value="1">Friedfisch</option>
+            <option value="2">Raubfisch</option>
+        </select>
+
+        <label for="newSpeciesName">Fischart:</label>
+        <input type="text" id="newSpeciesName">
+
+        <button onclick="addNewSpecies()">Übernehmen</button>
+    </div>
+
+    <div>
+        <h2>Fischart löschen</h2>
+        <label for="deleteFishType">Fish Type:</label>
+        <select id="deleteFishType" onchange="getSpeciesForFishType()">
+            <option value="1">Friedfisch</option>
+            <option value="2">Raubfisch</option>
+        </select>
+
+        <label for="speciesList">Fischart:</label>
+        <select id="speciesList"></select>
+
+        <button onclick="deleteSpecies()">Löschen</button>
+    </div>
+
+    <div>
+        <h2>Fischart ändern</h2>
+        <label for="editFishType">Fish Type:</label>
+        <select id="editFishType" onchange="getSpeciesForFishTypeEdit()">
+            <option value="1">Friedfisch</option>
+            <option value="2">Raubfisch</option>
+        </select>
+
+        <label for="editSpeciesList">Fischart:</label>
+        <select id="editSpeciesList" onchange="populateEditForm()">
+        </select>
+
+        <label for="editSpeciesName">Neuer Fischart-Name:</label>
+        <input type="text" id="editSpeciesName">
+
+        <button onclick="editSpecies()">Ändern</button>
+    </div>
+    <a href="/" id="homeButton">Home</a>
+</body>
+<script src="../JS/scriptSpecies.js"></script>
+</html>

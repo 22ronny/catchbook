@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <th:block th:include="fragments/head.html"></th:block>
+    <title>Catches</title>
+</head>
+<body>
+    <form th:action="@{/catches}" method="get">
+        <form th:action="@{/catches}" method="get">
+            <!-- Fish Type -->
+            <label for="fishTypeId">Fish Type:</label>
+            <select id="fishTypeId" name="fishTypeId">
+                <option value="">Choose Fish Type</option>
+                <option value="1" th:selected="${fishTypeId == 1}">Friedfisch</option>
+                <option value="2" th:selected="${fishTypeId == 2}">Raubfisch</option>
+            </select>
+        
+            <!-- Start Date -->
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" th:value="${param.startDate}" />
+        
+            <!-- End Date -->
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" th:value="${param.endDate}" />
+        
+            <!-- Species, Bait, Place - Add similar input fields for other parameters -->
+        
+            <!-- Submit Button -->
+            <button type="submit">Filter anwenden</button>
+        </form>
+        
+        <!-- Anzeige der Ergebnisse -->
+        <table>
+            <!-- Tabelle für die Ergebnisse hier einfügen -->
+        </table>
+    <div class="CatchBox" th:each="catch : ${catches}" th:include="fragments/catch.html"></div>
+    <p style="padding-bottom: 40px;"></p>
+    <a href="/" id="homeButton">Home</a>
+</body>
+</html>

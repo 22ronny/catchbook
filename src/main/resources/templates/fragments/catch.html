@@ -1,0 +1,9 @@
+<div th:fragment="catch">
+    <!-- <a th:href="@{/catch/{id}(id=${catch.id})}"><h1 class="Text" th:text="${catch.species}"></h1></a> -->
+    <h1 class="Text" th:text="${catch.species}"></h1>
+    <p class="Text" th:text="'Datum und Zeit: ' + ${catch.formattedCatchTime}"></p>
+    <p class="Text" th:text="'Köder: ' + ${catch.bait}"></p>
+    <p class="Text" th:text="'Platz: ' + ${catch.place}"></p>
+    <p class="Text" th:text="'Länge: ' + ${catch.length}"></p>
+    <p class="Text" th:text="'Gewicht: ' + ${catch.weight}"></p>
+</div>

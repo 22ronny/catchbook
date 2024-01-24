@@ -1,0 +1,489 @@
+{
+	"info": {
+		"_postman_id": "da22257d-b187-4dfd-8dee-7947a3b7388a",
+		"name": "catchbook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30566717"
+	},
+	"item": [
+		{
+			"name": "Bait",
+			"item": [
+				{
+					"name": "Bait",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fishType\":{\r\n        \"id\":1\r\n        },\r\n    \"bait\":\"Pink Tuna\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/addBait",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addBait"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Baits For Fish Type",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/getAllBaitsForFishType/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getAllBaitsForFishType",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Baits AND Fish Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/getAllBaitsAndFishType",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getAllBaitsAndFishType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bait",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bait\":\"blabla\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/patchBait/27",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patchBait",
+								"27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bait",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/deleteBait/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deleteBait",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Species",
+			"item": [
+				{
+					"name": "Species",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fishType\":{\r\n        \"id\":2},\r\n    \"name\":\"dsrfg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/addSpecies",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addSpecies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Species For Fish Type",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/getAllSpeciesForFishType/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getAllSpeciesForFishType",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Species AND Fish Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/getAllSpeciesAndFishType",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getAllSpeciesAndFishType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Species",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/patchSpecies/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patchSpecies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Species",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/deleteSpecies/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deleteSpecies",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Place",
+			"item": [
+				{
+					"name": "Place",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"place\":\"Test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/addPlace",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addPlace"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"place\":\"Gallien\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/patchPlace/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patchPlace",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/deletePlace/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deletePlace",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Catch",
+			"item": [
+				{
+					"name": "catch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"catchTime\":\"2022-11-29T15:50:00\",\r\n    \"bait\":{\r\n        \"id\":1,\r\n        \"fishType\":{\r\n            \"id\":1\r\n        }},\r\n    \"species\":{\r\n        \"id\":1,\r\n        \"fishType\":{\r\n            \"id\":1\r\n        }},\r\n    \"weight\":4.3,\r\n    \"length\":90,\r\n    \"place\":{\r\n        \"id\":2}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/addCatch",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"addCatch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "catch",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/getCatch?fishTypeId=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getCatch"
+							],
+							"query": [
+								{
+									"key": "fishTypeId",
+									"value": "1"
+								},
+								{
+									"key": "startDate",
+									"value": "2022-01-01T00:00",
+									"disabled": true
+								},
+								{
+									"key": "endDate",
+									"value": "2022-12-01T00:00",
+									"disabled": true
+								},
+								{
+									"key": "speciesId",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "baitId",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "placeId",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "catch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"catchTime\": \"2022-11-19T15:50:00\",\r\n    \"bait\": {\r\n        \"id\": 3,\r\n        \"fishType\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n    \"species\": {\r\n        \"id\": 3,\r\n        \"fishType\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n    \"weight\": 8.3,\r\n    \"length\": 65.0,\r\n    \"place\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/patchCatch/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"patchCatch",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

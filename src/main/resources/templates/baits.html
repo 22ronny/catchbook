@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <th:block th:include="fragments/head.html"></th:block>
+    <title>Baits</title>
+</head>
+<body>
+    <div>
+        <h2 class="headlines">Hinzufügen eines Köders</h2>
+        <label for="fishTypeAdd">Fish Type:</label>
+        <select id="fishTypeAdd">
+            <option value="1">Friedfisch</option>
+            <option value="2">Raubfisch</option>
+        </select>
+        <label for="newBait">Neuer Köder:</label>
+        <input type="text" id="newBait">
+        <button onclick="addBait()">Hinzufügen</button>
+    </div>
+
+    <div>
+        <h2 class="headlines">Köder löschen</h2>
+        <label for="deleteFishType">Fish Type:</label>
+        <select id="deleteFishType" onchange="loadBaits(this.value, 'deleteBait')">
+            <option value="1">Friedfisch</option>
+            <option value="2">Raubfisch</option>
+        </select>
+        <label for="deleteBait">Köder:</label>
+        <select id="deleteBait"></select>
+        <button onclick="deleteBait()">Löschen</button>
+    </div>
+
+    <div>
+        <h2 class="headlines">Köder ändern</h2>
+        <label for="updateFishType" >Fish Type:</label>
+        <select id="updateFishType" onchange="loadBaits(this.value, 'updateBait')">
+            <option value="1">Friedfisch</option>
+            <option value="2">Raubfisch</option>
+        </select>
+        <label for="updateBait">Köder:</label>
+        <select id="updateBait"></select>
+        <label for="updatedBait">Neuer Ködername:</label>
+        <input type="text" id="updatedBait">
+        <button onclick="updateBait()">Ändern</button>
+        <p style="padding-bottom: 40px;"></p>
+        <a href="/" id="homeButton">Home</a>
+    </div>
+</body>
+<script src="../JS/scriptBait.js"></script>
+</html>

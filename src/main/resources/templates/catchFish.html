@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <th:block th:include="fragments/head.html"></th:block>
+    <title>Catch a Fisch</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    
+    <div>
+        <label for="dateInput">Datum:</label>
+        <input type="date" id="dateInput" name="dateInput">
+    </div>
+    <div>
+        <label for="timeInput">Uhrzeit:</label>
+        <input type="time" id="timeInput" name="timeInput">
+    </div>
+    <div>
+        <label for="datetimeInput">Datum und Uhrzeit:</label>
+        <input type="datetime-local" id="datetimeInput" name="datetimeInput">
+    </div>
+</body>
+<script src="../JS/scriptCatchFish.js"></script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <th:block th:insert="~{fragments/head.html}"></th:block>
+    <title>Liste Köder</title>
+    <script src="../JS/scriptBait2.js"></script>
+</head>
+<body>
+    <h1>Raubfischköder</h1>
+    <div class="Box" th:each="bait : ${baitsPREDATOR}">
+        <th:block th:insert="~{fragments/bait.html}"></th:block>
+     </div>
+
+    <h1>Friedfischköder</h1>
+    <div class="Box" th:each="bait : ${baitsNON_PREDATOR}">
+        <th:block th:insert="~{fragments/bait.html}"></th:block>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<h2>Hinzufügen eines Platzes:</h2>
+<div>
+    <label for="placeInput">Platzname: </label>
+    <input type="text" id="placeInput" placeholder="Platzname">
+    <button onclick="addPlace()">Platz hinzufügen</button>
+</div>
+<h2>Löschen eines Platzes</h2>
+<div>
+    <select id="placesDropdown"></select>
+    <button onclick="deleteSelectedPlace()">Platz löschen</button>
+</div>
+<!-- Dropdown-Menü -->
+
+<div>
+    <h2>Ändern eines Platzes</h2>
+    <div>
+        <label for="places">Plätze: </label>
+        <select id="places">
+            <!-- Optionen werden dynamisch durch JavaScript hinzugefügt -->
+        </select>
+    </div>
+    <div>
+        <!-- Textfeld -->
+        <label for="selectedPlace">Ausgewählter Platz: </label>
+        <input type="text" id="selectedPlace">
+        <!-- Button zum Ändern -->
+        <button onclick="changePlace()">Ändern</button>
+    </div>
+</div>
